@@ -106,7 +106,7 @@
         rulesLink: null,
         themeLink: null,
         fbLink: null,
-        youtubeLink: www.youtube.com/moondye7,
+        youtubeLink: null,
         website: null,
         intervalMessages: [],
         messageInterval: 5,
