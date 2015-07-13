@@ -58,7 +58,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Kappa",
         language: "german",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/de.json",
         startupCap: 25, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
