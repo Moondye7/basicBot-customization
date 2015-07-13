@@ -103,7 +103,7 @@
         etaRestriction: false,
         welcome: false,
         opLink: null,
-        rulesLink: "Es gibt keine Regeln! Aber bitte sei freundlich!ヽ༼ຈلຈ༽ﾉ ",
+        rulesLink: "Es gibt keine Regeln! Aber bitte sei freundlich! ヽ༼ຈلຈ༽ﾉ ",
         themeLink: null,
         fbLink: "www.facebook.com/moondye7",
         youtubeLink: "www.youtube.com/moondye7",
