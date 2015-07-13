@@ -60,7 +60,7 @@
         language: "german",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/de.json",
         startupCap: 25, // 1-200
-        startupVolume: 0, // 0-100
+        startupVolume: 25, // 0-100
         startupEmoji: false, // true or false
         autowoot: true,
         autoskip: false,
