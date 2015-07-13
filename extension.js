@@ -1,7 +1,7 @@
 (function () {
 
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "Moondye7";
+    var fork = "Yemasthui";
 
     //Define our function responsible for extending the bot.
     function extend() {
