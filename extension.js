@@ -81,7 +81,7 @@
         historySkip: true,
         timeGuard: true,
         maximumSongLength: 10,
-        autodisable: true,
+        autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
         skipPosition: 3,
