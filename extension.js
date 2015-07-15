@@ -59,7 +59,7 @@
         botName: "Nazibot",
         language: "german",
         chatLink: "https://rawgit.com/Moondye7/basicBot/master/lang/de.json",
-        startupCap: 25, // 1-200
+        startupCap: 1, // 1-200
         startupVolume: 25, // 0-100
         startupEmoji: true, // true or false
         autowoot: true,
