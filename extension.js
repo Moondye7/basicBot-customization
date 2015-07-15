@@ -56,7 +56,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Kappasaurus",
+        botName: "Nazibot",
         language: "german",
         chatLink: "https://rawgit.com/Moondye7/basicBot/master/lang/de.json",
         startupCap: 25, // 1-200
@@ -98,7 +98,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 10,
-        motd: "Willkommen Moondyeboys ヽ༼ຈلຈ༽ﾉ raise your dongers ヽ༼ຈلຈ༽ﾉ",
+        motd: "( ͡° ͜◯ ͡°) ＣＬＯＷＮ ＦＩＥＳＴＡ ( ͡° ͜◯ ͡°)",
         filterChat: false,
         etaRestriction: false,
         welcome: false,
