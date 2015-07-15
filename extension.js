@@ -103,6 +103,7 @@
         etaRestriction: false,
         welcome: false,
         opLink: null,
+        pluginLink: "https://goo.gl/kop7Md",
         rulesLink: "Es gibt keine Regeln! Aber bitte sei freundlich! ヽ༼ຈلຈ༽ﾉ ",
         themeLink: null,
         fbLink: "https://www.facebook.com/moondye7",
