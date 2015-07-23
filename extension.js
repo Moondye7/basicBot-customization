@@ -16,7 +16,10 @@
         //Load custom settings set below
         bot.retrieveSettings();
 
-        }
+        bot.getLocked = function() {
+            if($(".wait-list.option.enabled").length > 0) return true;
+            else return false;
+        }  
 
         bot.commands.clearqueueCommand = {
             command: 'clearqueue',  //The command to be called. With the standard command literal this would be: !bacon
