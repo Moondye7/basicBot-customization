@@ -16,24 +16,48 @@
         //Load custom settings set below
         bot.retrieveSettings();
 
-        /*
-         Extend the bot here, either by calling another function or here directly.
-         Model code for a bot command:
+        }
 
-         bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
-         functionality: function(chat, cmd){
-         if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-         if( !bot.commands.executable(this.rank, chat) ) return void (0);
-         else{
-         //Commands functionality goes here.
-         }
-         }
-         }
-
-         */
+        bot.commands.clearqueueCommand = {
+            command: 'clearqueue',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'manager', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var locked = bot.getLocked();
+                    if(locked) {
+                        $.ajax({
+                        type: 'PUT', 
+                        url: 'https://plug.dj/_/booth/lock', 
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            isLocked: false,
+                            removeAllDJs: false })
+                        });
+                    }   
+                    $.ajax({
+                    type: 'PUT', 
+                    url: 'https://plug.dj/_/booth/lock', 
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        isLocked: true,
+                        removeAllDJs: true })
+                    });
+                    if(!locked) {
+                        $.ajax({
+                        type: 'PUT', 
+                        url: 'https://plug.dj/_/booth/lock', 
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            isLocked: false,
+                            removeAllDJs: false })
+                        });
+                    }
+                }
+            }
+        };
 
         bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
