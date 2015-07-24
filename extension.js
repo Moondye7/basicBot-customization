@@ -84,7 +84,7 @@
                     if (localStorage.getItem("LarrieTimeMaxUsers") === null){
                         //item not set
                         API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("LarrieMaxUsers")+"!");
-                    } else {
+                    } else { 
                         //item set
                         var nowMaxUsers = new Date(parseInt(localStorage.getItem("LarrieTimeMaxUsers")));
                         API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("LarrieMaxUsers")+"! This has set on "+nowMaxUsers);
