@@ -81,7 +81,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    if (localStorage.getItem("LarrieTimeMaxUsers") === true){
+                    if (localStorage.getItem("LarrieTimeMaxUsers") === null){
                         //item not set
                         API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("LarrieMaxUsers")+"!");
                     } else { 
