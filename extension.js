@@ -93,82 +93,9 @@
             }
         };
         
-        function msToStr(msTime){
-            var ms, msg, timeAway;
-            msg = '';
-            timeAway = {
-                'days': 2,
-                'hours': 0,
-                'minutes': 0,
-                'seconds': 0
-            };
-            ms = {
-                'day': 24 * 60 * 60 * 1000,
-                'hour': 60 * 60 * 1000,
-                'minute': 60 * 1000,
-                'second': 1000
-            };
-            if (msTime > ms.day) {
-                timeAway.days = Math.floor(msTime / ms.day);
-                msTime = msTime % ms.day;
-            }
-            if (msTime > ms.hour) {
-                timeAway.hours = Math.floor(msTime / ms.hour);
-                msTime = msTime % ms.hour;
-            }
-            if (msTime > ms.minute) {
-                timeAway.minutes = Math.floor(msTime / ms.minute);
-                msTime = msTime % ms.minute;
-            }
-            if (msTime > ms.second) {
-                timeAway.seconds = Math.floor(msTime / ms.second);
-            }
-            if (timeAway.days !== 0) {
-                msg += timeAway.days.toString() + 'd';
-            }
-            if (timeAway.hours !== 0) {
-                msg += timeAway.hours.toString() + 'h';
-            }
-            if (timeAway.minutes !== 0) {
-                msg += timeAway.minutes.toString() + 'm';
-            }
-            if (timeAway.minutes < 1 && timeAway.hours < 1 && timeAway.days < 1) {
-                msg += timeAway.seconds.toString() + 's';
-            }
-            if (msg !== '') {
-                return msg;
-            } else {
-                return false;
-            }
-        }
-        
-        /*test*/
+     
  
-        bot.commands.eventCommand = {
-            command: 'event',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    var eventTime = 1433095200000;
-                    var currentTime = Date.now();
-                    var timeUntil = eventTime - currentTime;
-                    var time = msToStr(timeUntil);
- 
-                    if (eventTime > currentTime){
-                        return API.sendChat("[@" + chat.un + "] Trap City Music Festival Day 2 starts in " + time);
-                    }
-                    else {
-                        API.sendChat("[@" + chat.un + "] There is no upcoming event.");
-                    }
- 
-                }
-            }
-        };
-        
-
+       
         bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
