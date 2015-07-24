@@ -62,12 +62,12 @@
             }
         };
         
-        function calcMaxUsers(){
+         function calcMaxUsers(){
             var usersNow = API.getUsers().length; //5
-            if(usersNow > localStorage.getItem("MaxUsers")){
-                localStorage.setItem("MaxUsers", usersNow);
-                localStorage.setItem("TimeMaxUsers", +new Date);
-                var nowMaxUsers = new Date(parseInt(localStorage.getItem("TimeMaxUsers")));
+            if(usersNow > localStorage.getItem("LarrieMaxUsers")){
+                localStorage.setItem("LarrieMaxUsers", usersNow);
+                localStorage.setItem("LarrieTimeMaxUsers", +new Date);
+                var nowMaxUsers = new Date(parseInt(localStorage.getItem("LarrieTimeMaxUsers")));
                 //console.log("New max users record: "+localStorage.getItem("maxUsers")+"!");
                 //console.log(""+nowMaxUsers);
             }
@@ -81,17 +81,18 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    if (localStorage.getItem("TimeMaxUsers") === null){
+                    if (localStorage.getItem("LarrieTimeMaxUsers") === null){
                         //item not set
-                        API.sendChat("Max users ever in this room: "+localStorage.getItem("MaxUsers")+"!");
+                        API.sendChat("Max users ever in this room: "+localStorage.getItem("LarrieMaxUsers")+"!");
                     } else {
                         //item set
-                        var nowMaxUsers = new Date(parseInt(localStorage.getItem("TimeMaxUsers")));
-                        API.sendChat("Max users ever in this room: "+localStorage.getItem("MaxUsers")+"! This has set on "+nowMaxUsers);
+                        var nowMaxUsers = new Date(parseInt(localStorage.getItem("LarrieTimeMaxUsers")));
+                        API.sendChat("Max users ever in this room: "+localStorage.getItem("LarrieMaxUsers")+"! This has set on "+nowMaxUsers);
                     }
                 }
             }
         };
+        
 
         bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
