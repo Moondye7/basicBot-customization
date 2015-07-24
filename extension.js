@@ -87,7 +87,7 @@
                     } else {
                         //item set
                         var nowMaxUsers = new Date(parseInt(localStorage.getItem("LarrieTimeMaxUsers")));
-                        API.sendChat("Max users ever in this room: "+localStorage.getItem("LarrieMaxUsers")+"! This has set on "+nowMaxUsers);
+                        API.sendChat("Die meisten User, die jemals hier waren: "+localStorage.getItem("LarrieMaxUsers")+"! This has set on "+nowMaxUsers);
                     }
                 }
             }
