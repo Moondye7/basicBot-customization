@@ -61,6 +61,37 @@
                 }
             }
         };
+        
+        function calcMaxUsers(){
+            var usersNow = API.getUsers().length; //5
+            if(usersNow > localStorage.getItem("LarrieMaxUsers")){
+                localStorage.setItem("LarrieMaxUsers", usersNow);
+                localStorage.setItem("LarrieTimeMaxUsers", +new Date);
+                var nowMaxUsers = new Date(parseInt(localStorage.getItem("LarrieTimeMaxUsers")));
+                //console.log("New max users record: "+localStorage.getItem("maxUsers")+"!");
+                //console.log(""+nowMaxUsers);
+            }
+        }
+        
+        bot.commands.maxUserCommand = {
+            command: 'maxusers',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'manager', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    if (localStorage.getItem("LarrieTimeMaxUsers") === null){
+                        //item not set
+                        API.sendChat("Max users ever in this room: "+localStorage.getItem("LarrieMaxUsers")+"!");
+                    } else {
+                        //item set
+                        var nowMaxUsers = new Date(parseInt(localStorage.getItem("LarrieTimeMaxUsers")));
+                        API.sendChat("Max users ever in this room: "+localStorage.getItem("LarrieMaxUsers")+"! This has set on "+nowMaxUsers);
+                    }
+                }
+            }
+        };
 
         bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
