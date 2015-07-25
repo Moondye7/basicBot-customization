@@ -64,10 +64,10 @@
         
          function calcMaxUsers(){
             var usersNow = API.getUsers().length; //5
-            if(usersNow > localStorage.getItem("DanielMaxUsers")){
-                localStorage.setItem("DanielMaxUsers", usersNow);
-                localStorage.setItem("DanielTimeMaxUsers", +new Date);
-                var nowMaxUsers = new Date(parseInt(localStorage.getItem("DanielTimeMaxUsers")));
+            if(usersNow > localStorage.getItem("RitzenspaltMaxUsers")){
+                localStorage.setItem("RitzenspaltMaxUsers", usersNow);
+                localStorage.setItem("RitzenspaltTimeMaxUsers", +new Date);
+                var nowMaxUsers = new Date(parseInt(localStorage.getItem("RitzenspaltTimeMaxUsers")));
                 //console.log("New max users record: "+localStorage.getItem("maxUsers")+"!");
                 //console.log(""+nowMaxUsers);
             }
@@ -81,13 +81,13 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    if (localStorage.getItem("DanielTimeMaxUsers") === null){
+                    if (localStorage.getItem("RitzenspaltTimeMaxUsers") === null){
                         //item not set
-                        API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("DanielMaxUsers")+"!");
+                        API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("RitzenspaltMaxUsers")+"!");
                     } else { 
                         //item set
-                        var nowMaxUsers = new Date(parseInt(localStorage.getItem("DanielTimeMaxUsers")));
-                        API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("DanielMaxUsers")+"! This has set on "+nowMaxUsers);
+                        var nowMaxUsers = new Date(parseInt(localStorage.getItem("RitzenspaltTimeMaxUsers")));
+                        API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("RitzenspaltMaxUsers")+"! This has set on "+nowMaxUsers);
                     }
                 }
             }
