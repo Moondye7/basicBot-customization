@@ -64,10 +64,10 @@
         
          function calcMaxUsers(){
             var usersNow = API.getUsers().length; //5
-            if(usersNow > localStorage.getItem("LarrieMaxUsers")){
-                localStorage.setItem("LarrieMaxUsers", usersNow);
-                localStorage.setItem("LarrieTimeMaxUsers", +new Date);
-                var nowMaxUsers = new Date(parseInt(localStorage.getItem("LarrieTimeMaxUsers")));
+            if(usersNow > localStorage.getItem("MaxUsers")){
+                localStorage.setItem("MaxUsers", usersNow);
+                localStorage.setItem("TimeMaxUsers", +new Date);
+                var nowMaxUsers = new Date(parseInt(localStorage.getItem("TimeMaxUsers")));
                 //console.log("New max users record: "+localStorage.getItem("maxUsers")+"!");
                 //console.log(""+nowMaxUsers);
             }
@@ -81,13 +81,13 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    if (localStorage.getItem("LarrieTimeMaxUsers") === null){
+                    if (localStorage.getItem("TimeMaxUsers") === null){
                         //item not set
-                        API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("LarrieMaxUsers")+"!");
+                        API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("MaxUsers")+"!");
                     } else { 
                         //item set
-                        var nowMaxUsers = new Date(parseInt(localStorage.getItem("LarrieTimeMaxUsers")));
-                        API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("LarrieMaxUsers")+"! This has set on "+nowMaxUsers);
+                        var nowMaxUsers = new Date(parseInt(localStorage.getItem("TimeMaxUsers")));
+                        API.sendChat("Die meisten Benutzer, die jemals hier waren: "+localStorage.getItem("MaxUsers")+"! This has set on "+nowMaxUsers);
                     }
                 }
             }
