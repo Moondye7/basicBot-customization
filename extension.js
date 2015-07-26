@@ -162,7 +162,7 @@
         motd: "( ͡° ͜◯ ͡°) ＣＬＯＷＮ ＦＩＥＳＴＡ ( ͡° ͜◯ ͡°)",
         socialEnabled: true,
         socialInterval: 15,
-        social: "Hier findest du alle Moondye7 Social Links: Twitch http://www.twitch.tv/moondye7 <br> Twitter https://twitter.com/Moondye7 Twitter <br> Youtube https://www.youtube.com/user/Moondye7 Youtube <br> Facebook https://www.facebook.com/Moondye7 Facebook",
+        social: "Hier findest du alle Moondye7 Social Links: Twitch http://www.twitch.tv/moondye7 Twitter https://twitter.com/Moondye7 Twitter Youtube https://www.youtube.com/user/Moondye7  Facebook https://www.facebook.com/Moondye7",
         filterChat: false,
         etaRestriction: false,
         welcome: false,
