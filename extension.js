@@ -11,7 +11,7 @@
         }
 
         //Precaution to make sure it is assigned properly.
-        var bot = window.bot;
+        var bot = window.bot; 
 
         //Load custom settings set below
         bot.retrieveSettings();
