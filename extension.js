@@ -166,7 +166,7 @@
         filterChat: false,
         etaRestriction: false,
         welcome: false,
-        opLink: null,
+        opLink: "http://git.io/vY29F",
         pluginLink: "https://goo.gl/kop7Md",
         rulesLink: "Es gibt keine Regeln!  Aber bitte sei freundlich! ヽ༼ຈلຈ༽ﾉ ",
         themeLink: null,
