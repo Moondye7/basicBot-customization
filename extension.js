@@ -172,7 +172,7 @@
         themeLink: null,
         fbLink: "https://www.facebook.com/moondye7",
         youtubeLink: "https://www.youtube.com/moondye7",
-        website: "http://www.twitch.tv/moondye7",
+        twitch: "http://www.twitch.tv/moondye7",
         intervalMessages: [],
         messageInterval: 5,
         songstats: false,
