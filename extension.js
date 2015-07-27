@@ -147,13 +147,14 @@
         usercommandsEnabled: true,
         skipPosition: 3,
         skipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["theme", "Dieser Song entspricht nicht dem Genre in diesem Raum. "],
+            ["op", "Dieser Song ist auf der Overplayed Liste. "],
+            ["history", "Dieser Song ist im Dj Verlauf . "],
+            ["mix", "Du hast einen Song gespielt, der gegen die Regeln ist. "],
+            ["sound", "Den song, den du gespielt hast, hat entweder schlechten oder gar keinen Sound. "],
+            ["nsfw", "Dieser Song enthält NSFW). "],
+            ["na", "Dieser Song war nicht verfügbar. "]
+            ["max", "Dieser Song war zu lang. "],
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
