@@ -169,7 +169,7 @@
         opLink: "http://git.io/vY2N8",
         pluginLink: "https://goo.gl/kop7Md",
         rulesLink: "Es gibt keine Regeln!  Aber bitte sei freundlich! ヽ༼ຈلຈ༽ﾉ ",
-        themeLink: null,
+        themeLink: "Du kannst Musik aus jedem Genre spielen, solange es aber auch wirklich Musik ist :)",
         fbLink: "https://www.facebook.com/moondye7",
         youtubeLink: "https://www.youtube.com/moondye7",
         twitch: "http://www.twitch.tv/moondye7",
