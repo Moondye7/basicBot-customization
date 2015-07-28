@@ -93,7 +93,7 @@
             }
         };
         
-     
+    }
  
        
         bot.commands.baconCommand = {
@@ -159,14 +159,14 @@
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: true,
-        motdInterval: 10,
+        motdInterval: 15,
         motd: "( ͡° ͜◯ ͡°) ＣＬＯＷＮ ＦＩＥＳＴＡ ( ͡° ͜◯ ͡°)",
         socialEnabled: true,
         socialInterval: 20,
         social: "Hier findest du alle Moondye7 Social Links: http://www.twitch.tv/moondye7 Twitch  https://twitter.com/Moondye7 Twitter  https://youtube.com/Moondye7 Youtube  https://www.facebook.com/Moondye7 Facebook",
         filterChat: false,
         etaRestriction: true,
-        welcome: false,
+        welcome: true,
         opLink: "http://git.io/vY2N8",
         pluginLink: "https://goo.gl/kop7Md",
         rulesLink: "Es gibt keine Regeln!  Aber bitte sei freundlich! ヽ༼ຈلຈ༽ﾉ ",
