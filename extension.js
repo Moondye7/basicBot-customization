@@ -107,7 +107,7 @@
         chatLink: "https://rawgit.com/Moondye7/basicBot/master/lang/de.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: true, // true or false
+        startupEmoji: false, // true or false
         autowoot: true,
         autoskip: false,
         smartSkip: true,
@@ -148,7 +148,7 @@
         motd: "( ͡° ͜◯ ͡°) ＣＬＯＷＮ ＦＩＥＳＴＡ ( ͡° ͜◯ ͡°)",
         filterChat: false,
         etaRestriction: true,
-        welcome: true,
+        welcome: false,
         opLink: "http://git.io/vY2N8",
         pluginLink: "https://goo.gl/kop7Md",
         rulesLink: "Es gibt keine Regeln!  Aber bitte sei freundlich! ヽ༼ຈلຈ༽ﾉ ",
