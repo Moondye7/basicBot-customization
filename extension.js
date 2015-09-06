@@ -145,7 +145,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 15,
-        motd: "( ͡° ͜◯ ͡°) ＣＬＯＷＮ ＦＩＥＳＴＡ ( ͡° ͜◯ ͡°)",
+        motd: "ヽ༼ຈلຈ༽ﾉ CANCERINO or SKIPPERINO ヽ༼ຈلຈ༽ﾉ",
         filterChat: false,
         etaRestriction: true,
         welcome: false,
