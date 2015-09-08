@@ -107,7 +107,7 @@
         chatLink: "https://rawgit.com/Moondye7/basicBot/master/lang/de.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupEmoji: true, // true or false
         autowoot: true,
         autoskip: false,
         smartSkip: true,
