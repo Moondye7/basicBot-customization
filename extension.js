@@ -150,7 +150,7 @@
         etaRestriction: true,
         welcome: false,
         opLink: "http://git.io/vY2N8",
-        pluginLink: "https://rcs.radiant.dj/",
+        pluginLink: "https://rcs.radiant.dj/", 
         rulesLink: "Es gibt keine Regeln!  Aber bitte sei freundlich! ヽ༼ຈلຈ༽ﾉ ",
         themeLink: "Cancer Music only inkl. gachi forsenGASM ",
         fbLink: "https://www.facebook.com/moondye7",
