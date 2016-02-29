@@ -16,7 +16,7 @@
         //Load custom settings set below
         bot.retrieveSettings();
 
-        bot.getLocked = function() {
+        bot.getLocked = function() {maxl
             if($(".wait-list.option.enabled").length > 0) return true;
             else return false;
         }  
@@ -126,7 +126,7 @@
         voteSkipLimit: 10,
         historySkip: true,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 12,
         autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
