@@ -161,7 +161,7 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Moondye7/basicBot-customization/master/blacklists/NSFWlist.json",
+            CASUAL: "https://rawgit.com/Moondye7/basicBot-customization/master/blacklists/CASUALlist.json",
             OP: "https://rawgit.com/Moondye7/basicBot-customization/master/blacklists/OPlist.json",
             BANNED: "https://rawgit.com/Moondye7/basicBot-customization/master/blacklists/BANNEDlist.json"
         }
